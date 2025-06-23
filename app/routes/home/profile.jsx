@@ -32,7 +32,7 @@ const ProfileText = ({ visible, titleId }) => (
     experiência em <strong>desenvolvimento de firmware com Arduino</strong> para diagnósticos e soluções de hardware.
   </Text>
   <Text className={styles.description} data-visible={visible} size="l" as="p">
-    No meu tempo livre gosto de praticar <strong>Jiu-Jitsu</strong>, explorar tecnologias, jogar e estudar inteligência
+    No meu tempo livre gosto de ir na <strong>Academia</strong>, explorar tecnologias, jogar e estudar inteligência
     artificial. Estou sempre aberto a conversar sobre novos projetos e desafios.
   </Text>
 </Fragment>
