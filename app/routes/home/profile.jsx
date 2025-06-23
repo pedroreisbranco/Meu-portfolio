@@ -17,22 +17,25 @@ import styles from './profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
-    <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
-    </Heading>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
-    </Text>
-  </Fragment>
+  <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
+    <DecoderText text="Olá, tudo bem?" start={visible} delay={500} />
+  </Heading>
+  <Text className={styles.description} data-visible={visible} size="l" as="p">
+    Eu sou o <strong>Pedro Branco</strong>, desenvolvedor <strong>Full Stack</strong> especializado em{' '}
+    <strong>Inteligência Artificial</strong> e <strong>Automação com n8n</strong>. Atualmente moro em{' '}
+    <strong>Porto Alegre</strong> e trabalho com desenvolvimento de soluções que conectam APIs, bancos de dados e
+    automações inteligentes para empresas e negócios.
+  </Text>
+  <Text className={styles.description} data-visible={visible} size="l" as="p">
+    Meus projetos incluem desenvolvimento de <strong>workflows de atendimento, automação para CRM</strong>, integrações
+    entre plataformas como <strong>Tiny ERP, Chatwoot, PostgreSQL, Pipedrive</strong> e muito mais. Tenho também
+    experiência em <strong>desenvolvimento de firmware com Arduino</strong> para diagnósticos e soluções de hardware.
+  </Text>
+  <Text className={styles.description} data-visible={visible} size="l" as="p">
+    No meu tempo livre gosto de praticar <strong>Jiu-Jitsu</strong>, explorar tecnologias, jogar e estudar inteligência
+    artificial. Estou sempre aberto a conversar sobre novos projetos e desafios.
+  </Text>
+</Fragment>
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
