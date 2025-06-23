@@ -105,6 +105,7 @@ export const Home = () => {
         index={1}
         title="Designing the Future of Business Automation"
         description="Designing a platform to streamline CRM processes with automated workflows."
+        showButton={false}
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -124,6 +125,7 @@ export const Home = () => {
         index={2}
         title="Designing the Future of Intelligent Automation"
         description="Designing a platform to empower businesses with intelligent AI agents for enhanced productivity."
+        showButton={false}
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -146,6 +148,7 @@ export const Home = () => {
         index={3}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        showButton={false}
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
