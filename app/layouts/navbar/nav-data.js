@@ -2,15 +2,15 @@ import config from '~/config.json';
 
 export const navLinks = [
   {
-    label: 'Projects',
+    label: 'Projetos',
     pathname: '/#project-1',
   },
   {
-    label: 'Details',
+    label: 'Sobre mim',
     pathname: '/#details',
   },
   {
-    label: 'Contact',
+    label: 'Contatos',
     pathname: '/contact',
   },
 ];

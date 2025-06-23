@@ -103,8 +103,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the Future of Business Automation"
-        description="Designing a platform to streamline CRM processes with automated workflows."
+        title="Projetando o futuro de empresas"
+        description="Desenvolvimento de um fluxo no n8n para otimizar processos de CRM."
         showButton={false}
         model={{
           type: 'laptop',
