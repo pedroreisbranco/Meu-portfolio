@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
 import styles from './home.module.css';
 
-// Prefetch draco decoader wasm
+// Prefetch draco decoder wasm
 export const links = () => {
   return [
     {
@@ -105,7 +105,6 @@ export const Home = () => {
         index={1}
         title="Designing the Future of Business Automation"
         description="Designing a platform to streamline CRM processes with automated workflows."
-        buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -125,8 +124,6 @@ export const Home = () => {
         index={2}
         title="Designing the Future of Intelligent Automation"
         description="Designing a platform to empower businesses with intelligent AI agents for enhanced productivity."
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -149,8 +146,6 @@ export const Home = () => {
         index={3}
         title="Biomedical image collaboration"
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
