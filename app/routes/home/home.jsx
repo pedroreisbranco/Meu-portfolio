@@ -105,7 +105,6 @@ export const Home = () => {
         index={1}
         title="Designing the Future of Business Automation"
         description="Designing a platform to streamline CRM processes with automated workflows."
-        buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
