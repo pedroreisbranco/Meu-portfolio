@@ -104,7 +104,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Projetando o futuro de empresas"
-        description="Desenvolvimento de um fluxo no n8n para otimizar processos de CRM."
+        description="Desenvolvimento de um fluxo no N8N para otimizar processos de CRM com Inteligência Artificial."
         showButton={false}
         model={{
           type: 'laptop',
