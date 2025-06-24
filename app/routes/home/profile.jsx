@@ -21,7 +21,7 @@ const ProfileText = ({ visible, titleId }) => (
     <DecoderText text="Olá, tudo bem?" start={visible} delay={500} />
   </Heading>
   <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Eu sou o <strong>Pedro Branco</strong>, desenvolvedor <strong>Full Stack</strong> especializado em{' '}
+    Eu sou o <strong>Pedro</strong>, desenvolvedor <strong>Full Stack</strong> especializado em{' '}
     <strong>Inteligência Artificial</strong> e <strong>Automação com n8n</strong>. Atualmente moro em{' '}
     <strong>Porto Alegre</strong> e trabalho com desenvolvimento de soluções que conectam APIs, bancos de dados e
     automações inteligentes para empresas e negócios.
