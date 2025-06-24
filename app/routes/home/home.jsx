@@ -123,8 +123,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Designing the Future of Intelligent Automation"
-        description="Designing a platform to empower businesses with intelligent AI agents for enhanced productivity."
+        title="Projetando o futuro da automação inteligente"
+        description="Projetando automações para atender empresas com agentes de IA inteligentes para maior produtividade, sem complicações."
         showButton={false}
         model={{
           type: 'phone',
