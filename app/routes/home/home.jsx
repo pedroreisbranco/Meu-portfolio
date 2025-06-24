@@ -123,8 +123,8 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Projetando o futuro da automação inteligente"
-        description="Projetando automações para atender empresas com agentes de IA inteligentes para maior produtividade, sem complicações."
+        title="Integrações com whatssap"
+        description="Automações com IA para atender clientes atráves do celular para maior produtividade, sem complicações."
         showButton={false}
         model={{
           type: 'phone',
