@@ -146,8 +146,8 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Desenvolvimento de Agentes IA e ferramentas"
+        description="Inteligência personalizada para clínica de nutricionismo com python"
         showButton={false}
         model={{
           type: 'laptop',
