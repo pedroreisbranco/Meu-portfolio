@@ -23,7 +23,7 @@ const ProfileText = ({ visible, titleId }) => (
   <Text className={styles.description} data-visible={visible} size="l" as="p">
     Eu sou o <strong>Pedro</strong>, desenvolvedor <strong>Full Stack</strong> especializado em{' '}
     <strong>Inteligência Artificial</strong> e <strong>Automação com n8n</strong>. Atualmente moro em{' '}
-    <strong>Porto Alegre</strong> e trabalho com desenvolvimento de soluções que conectam APIs, bancos de dados e
+    <strong>Canoas</strong> e trabalho com desenvolvimento de soluções que conectam APIs, bancos de dados e
     automações inteligentes para empresas e negócios.
   </Text>
   <Text className={styles.description} data-visible={visible} size="l" as="p">
