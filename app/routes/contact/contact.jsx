@@ -32,7 +32,7 @@ const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
 export async function action({ context, request }) {
   const ses = new SESClient({
-    region: 'sa-east-1', // Ajuste aqui se sua conta SES for em outra região
+    region: 'us-east-1', // Ajuste aqui se sua conta SES for em outra região
     credentials: {
       accessKeyId: context.cloudflare.env.AWS_ACCESS_KEY_ID,
       secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
