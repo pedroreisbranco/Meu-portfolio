@@ -32,7 +32,7 @@ const EMAIL_PATTERN = /(.+)@(.+){2,}\.(.+){2,}/;
 
 export async function action({ context, request }) {
   const ses = new SESClient({
-    region: 'sa-east-1',
+    region: 'sa-east-1', // Ajuste aqui se sua conta SES for em outra região
     credentials: {
       accessKeyId: context.cloudflare.env.AWS_ACCESS_KEY_ID,
       secretAccessKey: context.cloudflare.env.AWS_SECRET_ACCESS_KEY,
@@ -45,10 +45,8 @@ export async function action({ context, request }) {
   const message = String(formData.get('message'));
   const errors = {};
 
-  // Return without sending if a bot trips the honeypot
   if (isBot) return json({ success: true });
 
-  // Handle input validation on the server
   if (!email || !EMAIL_PATTERN.test(email)) {
     errors.email = 'Please enter a valid email address.';
   }
@@ -69,28 +67,35 @@ export async function action({ context, request }) {
     return json({ errors });
   }
 
-  // Send email via Amazon SES
-  await ses.send(
-    new SendEmailCommand({
-      Destination: {
-        ToAddresses: [context.cloudflare.env.EMAIL],
-      },
-      Message: {
-        Body: {
-          Text: {
-            Data: `From: ${email}\n\n${message}`,
+  try {
+    await ses.send(
+      new SendEmailCommand({
+        Destination: {
+          ToAddresses: [context.cloudflare.env.EMAIL],
+        },
+        Message: {
+          Body: {
+            Text: {
+              Data: `From: ${email}\n\n${message}`,
+            },
+          },
+          Subject: {
+            Data: `Portfolio message from ${email}`,
           },
         },
-        Subject: {
-          Data: `Portfolio message from ${email}`,
-        },
-      },
-      Source: `Portfolio <${context.cloudflare.env.FROM_EMAIL}>`,
-      ReplyToAddresses: [email],
-    })
-  );
+        Source: `Portfolio <${context.cloudflare.env.FROM_EMAIL}>`,
+        ReplyToAddresses: [email],
+      })
+    );
 
-  return json({ success: true });
+    return json({ success: true });
+  } catch (error) {
+    console.error("SES Send Error:", error); // Isso vai logar no console do Worker
+    return json({ 
+      errors: { message: 'Falha ao enviar email. Veja os logs para detalhes.' },
+      debug: String(error) // Opcional: retornar o erro como texto para você ver na resposta
+    });
+  }
 }
 
 export const Contact = () => {
@@ -126,7 +131,6 @@ export const Contact = () => {
               data-status={status}
               style={getDelay(tokens.base.durationXS, initDelay, 0.4)}
             />
-            {/* Hidden honeypot field to identify bots */}
             <Input
               className={styles.botkiller}
               label="Name"
@@ -176,6 +180,11 @@ export const Contact = () => {
                       <Icon className={styles.formErrorIcon} icon="error" />
                       {actionData?.errors?.email}
                       {actionData?.errors?.message}
+                      {actionData?.debug && (
+                        <div className={styles.formErrorDebug}>
+                          {actionData.debug}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
