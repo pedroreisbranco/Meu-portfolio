@@ -10,8 +10,10 @@ export const navLinks = [
     pathname: '/#details',
   },
   {
-    label: 'Contatos',
-    pathname: '/contact',
+    label: 'Contato',
+    pathname: 
+      'https://wa.me/5551992415089?text=Olá%20Pedro,%20vim%20pelo%20seu%20portfólio',
+    external: true
   },
 ];
 

@@ -62,7 +62,9 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                href="https://wa.me/5551992415089?text=Olá%20Pedro,%20vim%20pelo%20seu%20portfólio"
+                target="_blank"
+                rel="noopener noreferrer"
                 icon="send"
               >
                 Me envie uma mensagem
