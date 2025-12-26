@@ -104,8 +104,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Projetando o futuro de empresas"
-        description="Desenvolvimento de um fluxo no N8N para otimizar processos de CRM com Inteligência Artificial."
-        showButton={false}
+        description="Automatizei fluxos de CRM usando N8N e Inteligência Artificial, aumentando a eficiência e reduzindo tarefas manuais em empresas de médio porte."
+        showButton={true}
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -124,8 +124,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Integrações com whatssap"
-        description="Automações com IA para atender clientes atráves do celular para maior produtividade, sem complicações."
-        showButton={false}
+        description="Implementei automações inteligentes via WhatsApp, permitindo atendimento rápido e personalizado, reduzindo o tempo gasto com tarefas repetitivas."
+        showButton={true}
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -147,8 +147,8 @@ export const Home = () => {
         visible={visibleSections.includes(projectThree.current)}
         index={3}
         title="Desenvolvimento de Agentes IA e ferramentas"
-        description="Inteligência personalizada para clínica de nutricionismo com python"
-        showButton={false}
+        description="Desenvolvi agentes inteligentes em Python para clínicas de nutrição, oferecendo recomendações personalizadas e automatizando processos de análise de dados."
+        showButton={true}
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
