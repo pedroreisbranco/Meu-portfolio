@@ -3,19 +3,26 @@ const ProfileText = ({ visible, titleId }) => (
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Olá, tudo bem?" start={visible} delay={500} />
     </Heading>
+
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Eu sou o <strong>Pedro</strong>, desenvolvedor <strong>Full Stack</strong> especializado em{' '}
-      <strong>Inteligência Artificial</strong> e <strong>Automação com n8n</strong>. Atualmente moro em{' '}
-      <strong>Porto Alegre</strong> e trabalho com desenvolvimento de soluções que conectam APIs, bancos de dados e
-      automações inteligentes para empresas e negócios.
+      Eu sou o <strong>Pedro</strong>, desenvolvedor <strong>Full Stack</strong> especializado em
+      <strong> Inteligência Artificial</strong> e <strong>Automações com n8n</strong>. Atualmente moro em
+      <strong> Porto Alegre</strong> e atuo no desenvolvimento de soluções que conectam APIs,
+      bancos de dados e sistemas, criando fluxos inteligentes que automatizam processos
+      e aumentam a eficiência de empresas e negócios.
     </Text>
+
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Meus projetos incluem desenvolvimento de <strong>workflows de atendimento, automação para CRM</strong>, integrações
-      entre plataformas como <strong>Tiny ERP, Chatwoot, PostgreSQL, Pipedrive</strong> e muito mais, incluindo o desenvolvimento de <strong>agentes de IA</strong>.
+      Meus projetos envolvem <strong>workflows de atendimento</strong>, automações para
+      <strong> CRM</strong> e integrações entre plataformas como
+      <strong> Tiny ERP, Chatwoot, PostgreSQL e Pipedrive</strong>, além do desenvolvimento
+      de <strong> agentes de IA personalizados</strong>.
     </Text>
+
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      No meu tempo livre gosto de ir na <strong>Academia</strong>, explorar tecnologias, jogar e estudar inteligência
-      artificial. Estou sempre aberto a conversar sobre novos projetos e desafios.
+      Também desenvolvo <strong>landing pages modernas e estratégicas</strong>,
+      focadas em performance e conversão. Estou sempre explorando novas tecnologias
+      e aberto a construir soluções inovadoras e desafiadoras.
     </Text>
   </Fragment>
 );
