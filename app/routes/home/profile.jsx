@@ -35,8 +35,15 @@ const ProfileText = ({ visible, titleId }) => (
     </Text>
 
     <Text className={styles.description} data-visible={visible} size="l" as="p">
+      Meus projetos incluem desenvolvimento de <strong>workflows de atendimento, automação para CRM</strong>,
+      integrações entre plataformas como <strong>Tiny ERP, Chatwoot, PostgreSQL, Pipedrive,</strong>
+      desenvolvimento de <strong>agentes de IA</strong>e Também desenvolvo <strong>landing pages modernas e estratégicas</strong>,
+      focadas em performance e conversão.
+    </Text>
+
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
       No meu tempo livre gosto de ir na <strong>Academia</strong>, explorar tecnologias,
-      jogar e estudar inteligência artificial.
+      sair com os amigos, jogar e estudar inteligência artificial.
     </Text>
   </Fragment>
 );
