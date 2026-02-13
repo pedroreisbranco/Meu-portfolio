@@ -30,14 +30,8 @@ const ProfileText = ({ visible, titleId }) => (
 
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       Meus projetos incluem desenvolvimento de <strong>workflows de atendimento, automação para CRM</strong>,
-      integrações entre plataformas como <strong>Tiny ERP, Chatwoot, PostgreSQL, Pipedrive</strong>
-      e desenvolvimento de <strong>agentes de IA</strong>.
-    </Text>
-
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Meus projetos incluem desenvolvimento de <strong>workflows de atendimento, automação para CRM</strong>,
       integrações entre plataformas como <strong>Tiny ERP, Chatwoot, PostgreSQL, Pipedrive,</strong>
-      desenvolvimento de <strong>agentes de IA</strong>e Também desenvolvo <strong>landing pages modernas e estratégicas</strong>,
+      desenvolvimento de <strong>agentes de IA</strong>e Também desenvolvo <strong>Landing Pages modernas e estratégicas</strong>,
       focadas em performance e conversão.
     </Text>
 
