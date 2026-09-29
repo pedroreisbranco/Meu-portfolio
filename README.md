@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Personal portfolio</h1>
 
-[![Site preview](/public/Captura de tela 2026-09-29 122501.png)](https://pedroreisbranco.pages.dev/)
+[![Site preview](/public/site-preview_2.png)](https://pedroreisbranco.pages.dev/)
 
 My design portfolio to showcase a few projects. Built with [Remix](https://remix.run/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/). View the [live site](https://pedroreisbranco.pages.dev/) or check out a live version of the [components storybook](https://storybook.hamishw.com).
 
